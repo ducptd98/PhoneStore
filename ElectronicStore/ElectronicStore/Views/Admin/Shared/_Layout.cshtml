@@ -1,0 +1,296 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using ElectronicStore.Ultilities
+@{
+    ViewData["Title"] = "_Layout";
+}
+
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    var Name = "";
+    if (SignInManager.IsSignedIn(User))
+    {
+        var userName = UserManager.GetUserName(User);
+        var NameData = userName.Split("@");
+        Name = NameData[0];
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Electronic Store</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+        <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/jquery-ui.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/jquery-ui.min.css" />
+        @*<link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="~/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="~/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+            <!-- //Custom Theme files -->
+            <!-- font-awesome icons -->
+            <link href="~/css/font-awesome.css" rel="stylesheet">*@
+        <!-- //font-awesome icons -->
+        <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+
+        <link rel="stylesheet" href="~/css/bootstrap.css">
+        <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="~/css/style.css" type="text/css" media="all" />
+        <!-- Style-CSS -->
+        <!-- font-awesome-icons -->
+        <link href="~/css/font-awesome.css" rel="stylesheet">
+        <!-- //font-awesome-icons -->
+        <!-- /Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+
+
+        <!-- js -->
+        @*<script src="~/js/jquery.min.js"></script>
+            <link rel="stylesheet" href="~/css/jquery.countdown.css" /> <!-- countdown -->
+            <!-- //js -->
+            <!-- web fonts -->
+            <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+            <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>*@
+        <!-- Custom styles for this template-->
+        <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+        <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="~/lib/jquery/dist/jquery-ui.js" />
+        @*<link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="~/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="~/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+            <!-- //Custom Theme files -->
+            <!-- font-awesome icons -->
+            <link href="~/css/font-awesome.css" rel="stylesheet">*@
+        <!-- //font-awesome icons -->
+        <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="~/css/bootstrap.css">
+        <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="~/css/style.css" type="text/css" media="all" />
+        <!-- Style-CSS -->
+        <!-- font-awesome-icons -->
+        <link href="~/css/font-awesome.css" rel="stylesheet">
+        <!-- //font-awesome-icons -->
+        <!-- /Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+
+
+        <!-- js -->
+        @*<script src="~/js/jquery.min.js"></script>
+            <link rel="stylesheet" href="~/css/jquery.countdown.css" /> <!-- countdown -->
+            <!-- //js -->
+            <!-- web fonts -->
+            <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+            <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>*@
+        <!-- Custom styles for this template-->
+        <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/jquery-ui.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/jquery-ui.min.css" />
+    </environment>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body style="background-color:aliceblue;">
+    <header class="py-sm-3 pt-3 pb-2" id="home">
+        <div class="container">
+            <!-- nav -->
+            <div class="top-w3pvt d-flex">
+                <div id="logo">
+                    <h1> <a asp-area="Customer" asp-controller="Home" asp-action="Index"><span class="log-w3pvt">E</span>lectronic</a> <label class="sub-des">Online Store</label></h1>
+                </div>
+
+                <div class="forms ml-auto">
+                    @*<a href="login.html" class="btn"><span class="fas fa-user-circle-o"></span> Sign In</a>
+                        <a href="register.html" class="btn"><span class="fas fa-pencil-square-o"></span> Sign Up</a>*@
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+
+                        <nav class="justify-content-end">
+                            <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm">
+
+                                <div class="btn-group">
+                                    @if (User.IsInRole(SD.SuperAdminEndUser))
+                                    {
+                                        <a asp-area="Admin" asp-controller="HomeAdmin" asp-action="Index"><span><i class="fas fa-tools" style="color:black;"></i></span></a>
+                                    }
+                                    <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @Name</a>
+
+                                    <button type="submit" class="btn" style="background-color:aliceblue;">Logout</button>
+                                </div>
+
+                            </form>
+                        </nav>
+
+                    }
+                </div>
+            </div>
+        </div>>
+    </header>
+
+    <div class="row">
+        <div class="col-md-3">
+            <nav class="nav" style="margin-left:40px;color:aliceblue;">
+                <ul class="navbar-nav bg-gradient-info bg-white sidebar sidebar-dark accordion" id="accordionSidebar">
+
+                    <!-- Sidebar - Brand -->
+                    <a class="sidebar-brand d-flex align-items-center justify-content-center" asp-area="Admin" asp-controller="HomeAdmin" asp-action="Index">
+                        <div class="sidebar-brand-icon rotate-n-15">
+                            <i class="fas fa-laugh-wink"></i>
+                        </div>
+                        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                    </a>
+
+                    <!-- Divider -->
+                    <hr class="sidebar-divider my-0">
+
+                    <!-- Nav Item - Dashboard -->
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="HomeAdmin" asp-action="Index">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <!-- Divider -->
+                    <hr class="sidebar-divider">
+
+                    @if (User.IsInRole(SD.SuperAdminEndUser))
+                    {
+                        <!-- Nav Item - Pages Collapse Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="ProductCategory" asp-action="Index">
+                                <i class="fas fa-fw fa-cog"></i>
+                                <span>Product Category</span>
+                            </a>
+                        </li>
+
+                        <!-- Divider -->
+                        <hr class="sidebar-divider">
+
+                        <!-- Nav Item - Pages Collapse Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="Brands" asp-action="Index">
+                                <i class="fas fa-code-branch"></i>
+                                <span>Brands</span>
+                            </a>
+                        </li>
+
+                        <!-- Divider -->
+                        <hr class="sidebar-divider">
+
+                        <!-- Nav Item - Pages Collapse Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="Products" asp-action="Index">
+                                <i class="fas fa-clipboard-list"></i>
+                                <span>Products</span>
+                            </a>
+                        </li>
+                        <hr class="sidebar-divider">
+
+                        <!-- Nav Item - Pages Collapse Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="ProductAttributes" asp-action="Index">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Product Details</span>
+                            </a>
+                        </li>
+                        <hr class="sidebar-divider">
+
+                        <!-- Nav Item - Pages Collapse Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="ApplicationUsers" asp-action="Index">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Users</span>
+                            </a>
+                        </li>
+                    }
+                    <!-- Nav Item - Pages Collapse Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="Admin" asp-controller="Order" asp-action="Index">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Order</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-9">
+            @RenderBody()
+        </div>
+
+    </div>
+    <div class="row justify-content-between container body-content">
+        <hr />
+        <footer>
+            <p>&copy; 2019 - ShoeManagement</p>
+        </footer>
+    </div>
+
+
+    <environment>
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/vendor/jquery/jquery.min.js"></script>
+        <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="js/demo/chart-area-demo.js"></script>
+        <script src="js/demo/chart-pie-demo.js"></script>
+        <script src="~/lib/jquery/dist/jquery-ui.js"></script>
+        <script src="~/lib/jquery/dist/jquery-ui.min.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/vendor/jquery/jquery.min.js"></script>
+        <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="~/js/sb-admin-2.min.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="~/vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="~/js/demo/chart-area-demo.js"></script>
+        <script src="~/js/demo/chart-pie-demo.js"></script>
+        <script src="~/lib/jquery/dist/jquery-ui.js"></script>
+        <script src="~/lib/jquery/dist/jquery-ui.min.js"></script>
+
+    </environment>
+    @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+@RenderSection("Scripts", required: false)
+</body>
+</html>
+
+

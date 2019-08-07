@@ -1,0 +1,183 @@
+﻿@model ElectronicStore.Models.ViewModels.ProductAttributesViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<br /><br />
+<h2 class="text-info">Product Attributes Details</h2>
+<div class="container justify-content-between">
+    <form method="post" asp-action="Details" enctype="multipart/form-data">
+        <div class="p-4 border rounded">
+            <div class="text-danger" asp-validation-summary="ModelOnly">
+
+            </div>
+            <input hidden asp-for="ProductAttributes.Id" />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Products"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Products.Name" readonly class="form-control" />
+                    @*<select asp-for="ProductAttributes.ProductId" asp-items="Model.Products.ToSelectListItem(Model.ProductAttributes.ProductId)" class="form-control"></select>*@
+                </div>
+            </div>
+            <label class="text-info">Operating System Details</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.OS"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.OS" readonly class="form-control" />
+                </div>               
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.CPU"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.CPU" readonly type="text" class=" form-control" />
+                </div>              
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.RAM"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.RAM" readonly class="form-control" />
+                </div>
+            </div>
+            <label class="text-info">Monitor Details</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.MonitorSize"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.MonitorSize" readonly type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Resolution"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Resolution" readonly class="form-control" />
+                </div>
+            </div>
+            <label class="text-info">Camera Details</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.MainCamera"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.MainCamera" readonly class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.FrontCamera"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.FrontCamera" readonly class="form-control" />
+                </div>
+            </div>
+            <label class="text-info">Connectivity</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Connection2G"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Connection2G" readonly class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Connection3G"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Connection3G" readonly class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Connection4G"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Connection4G" readonly class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Wifi"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Wifi" readonly class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Bluetooth"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Bluetooth" readonly class="form-control" />
+                </div>
+            </div>
+            <label class="text-info">Storage</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.ExternalStorage"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.ExternalStorage" readonly class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.SIMCount"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.SIMCount" readonly class="form-control" />
+                </div>
+            </div>
+            <label class="text-info">Capacity</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Capacity"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Capacity" readonly class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.PinCapacity"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.PinCapacity" readonly class="form-control" />
+                </div>
+            </div>
+            <label class="text-info">Others</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.GPS"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.GPS" readonly class="form-control" />
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model.ProductAttributes.Id">Go to Update</a>
+                <a asp-action="Index" class="btn btn-success">Back To List</a>
+            </div>
+        </div>
+    </form>
+</div>

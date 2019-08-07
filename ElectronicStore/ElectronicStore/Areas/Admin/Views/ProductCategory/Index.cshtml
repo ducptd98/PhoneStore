@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ElectronicStore.Models.ProductCategory>
+
+<br /> <br />
+       <div >
+           <div class="row">
+               <div class="col-6">
+                   <h2 class="text-info">Category Product List</h2>
+               </div>
+               <div class="col-5 text-right">
+                   <a asp-action="Create" class="btn btn-info"><i class="fas fa-plus"></i> &nbsp; New Category Product</a>
+               </div>
+               <div class="col-1">
+
+               </div>
+           </div>
+           <br />
+           <div class="container-fluid">
+               <div>
+                   <table class="table table-striped border">
+                       <tr class="table-info">
+                           <th>
+                               @Html.DisplayNameFor(m => m.Name)
+                           </th>
+                           <th>
+                               @Html.DisplayNameFor(m => m.CreatedDate)
+                           </th>
+                           <th>
+                               @Html.DisplayNameFor(m => m.CreatedBy)
+                           </th>
+                           <th>
+                               @Html.DisplayNameFor(m => m.ModifiedDate)
+                           </th>
+                           <th>
+                               @Html.DisplayNameFor(m => m.ModifiedBy)
+                           </th>
+                           <th>
+                               @Html.DisplayNameFor(m => m.ShowOnHome)
+                           </th>
+                           <th></th>
+                           <th></th>
+                       </tr>
+                       @foreach (var item in Model)
+                       {
+                           <tr>
+                               <td>
+                                   @Html.DisplayFor(m => item.Name)
+                               </td>
+                               <td>
+                                   @Html.DisplayFor(m => item.CreatedDate)
+                               </td>
+                               <td>
+                                   @Html.DisplayFor(m => item.CreatedBy)
+                               </td>
+                               <td>
+                                   @Html.DisplayFor(m => item.ModifiedDate)
+                               </td>
+                               <td>
+                                   @Html.DisplayFor(m => item.ModifiedBy)
+                               </td>
+                               <td>
+                                   @Html.DisplayFor(m => item.ShowOnHome)
+                               </td>
+                               <td>
+                                   <partial name="_TableButtonPartial" model="@Convert.ToInt32(item.Id)" />
+                               </td>
+                           </tr>
+                       }
+                   </table>
+                   </div>
+               </div>
+       </div>

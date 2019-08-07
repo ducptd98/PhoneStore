@@ -1,0 +1,272 @@
+﻿@using System.Linq
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Http
+@using ElectronicStore.Data
+@using ElectronicStore.Extensions
+@model ElectronicStore.Models.ViewModels.OrderViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var _db = (ApplicationDbContext)ViewData["DbContext"];
+}
+<br /><br />
+<h2>Create Order</h2>
+<div class="container">
+    <div>
+        <form method="post" asp-action="Create">
+            <div class="form-group">
+                <div class="col-2">
+                    <label asp-for="Order.Appointments.Customer.FullName"></label>
+                </div>
+                <div class="col-7">
+                    <input asp-for="Order.Appointments.Customer.FullName" class="search form-control" placeholder="Search user" id="searchUser" />
+                </div>
+                <span asp-validation-for="Order.Appointments.Customer.FullName" class="table-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="col-2">
+                    <label asp-for="Order.Appointments.Customer.Email"></label>
+                </div>
+                <div class="col-7">
+                    <input asp-for="Order.Appointments.Customer.Email" class="form-control ui-widget-content" id="email" />
+                </div>
+                <span asp-validation-for="Order.Appointments.Customer.Email" class="table-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="col-2">
+                    <label asp-for="Order.Appointments.Customer.ShippingAddress"></label>
+                </div>
+                <div class="col-7">
+                    <input asp-for="Order.Appointments.Customer.ShippingAddress" class="form-control ui-widget-content" id="shippingAddress" />
+                </div>
+                <span asp-validation-for="Order.Appointments.Customer.ShippingAddress" class="table-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="col-2">
+                    <label asp-for="Order.Appointments.Customer.PhoneNumber"></label>
+                </div>
+                <div class="col-7">
+                    <input asp-for="Order.Appointments.Customer.PhoneNumber" class="form-control ui-widget-content" id="phone" />
+                </div>
+                <span asp-validation-for="Order.Appointments.Customer.PhoneNumber" class="table-danger"></span>
+            </div>
+
+            <partial name="_TableProductPartial" />
+
+            <table class="table">
+                <tr>
+                    <td>
+                        <input class="form-control" id="productId" /> @*ID product*@
+                    </td>
+                    <td colspan="4" class="form-inline">
+                        <input class="form-control" placeholder="Search by product name" id="searchProduct" />
+                        <div style="margin-left: 10px">
+                            <button class="btn btn-dark" style="cursor: pointer" id="addProductToList">Add Product</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div id="summary" hidden>
+                @*Shipping Method and event change feeShipping*@
+                <h3>Shipping Method</h3>
+                <div>
+                    <div>
+                        <input type="radio" value="15000" id="feeShipStandart" name="typeShip" onclick="getFeeShip()" checked />
+                        <strong>Standart (15 000VND)</strong>
+                    </div>
+                    <div>
+                        <input type="radio" value="45000" id="feeShipExpress" name="typeShip" onclick="getFeeShip()" />
+                        <strong>Express (45 000VND)</strong>
+                    </div>
+                </div>
+                @*Order Summary*@
+                <h4>Order summary</h4>
+                <table class="table" id="tabelProductSummary">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th class="text-right"></th>
+                            <th class="text-right"></th>
+                            <th class="text-right">Total</th> @*Get total (price * quantity)*@
+                        </tr>
+                        @*Danh sach product*@
+                        <tr>
+                            <td>Sub Total</td>
+                            <td colspan="3" class="text-right">
+                                <label id="subTotal"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Shipping:</td>
+                            <td colspan="3" class="text-right" id="feeship"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Order Total:</td>
+                            <td colspan="3" class="text-right" id="total"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" style="cursor: pointer" disabled>
+                    <i class="fa fa-check"></i> Create Order
+                </button>
+                <button class="btn btn-dark" style="cursor: pointer">
+                    Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts
+{
+    <script>
+        $(document).ready(function() {
+            initAutoComplete();
+
+        });
+        //Summary
+        //khai bao
+        var _productPrice = document.getElementsByName('productPrice');
+        var curQuantity = document.getElementsByName('quantity');
+        var _total = document.getElementById('total');
+        var _subTotal = document.getElementById('subTotal');
+        var _feeShip = document.getElementById("feeship");
+        var sub = 0.0;
+
+        //Load feeship and subtotal default
+        var type1 = document.getElementsByName("typeShip");
+        _feeShip.innerHTML = type1[0].value;
+        _feeShip.value = type1[0].value;
+        //get feeship when change and set total price
+        function getFeeShip() {
+            var type = document.getElementsByName("typeShip");
+            if (type[0].checked) {
+                _feeShip.innerHTML = type[0].value;
+                _feeShip.value = type[0].value;
+            } else {
+                _feeShip.innerHTML = type[1].value;
+                _feeShip.value = type[1].value;
+            }
+            //Change Total
+            $('#subTotal').val($('#Quantity').val() * $('#productPrice').val());
+            _total.innerHTML = Number(_subTotal.value) + Number(_feeShip.value);
+        }
+        function getQuantity() {
+            for (var i = 0; i < @Model.Products.Count; i++) {
+                //change quantity
+                summaryQuantity[i].value = curQuantity[i].value;
+                summaryQuantity[i].innerHTML = curQuantity[i].value;
+
+                _productPrice[i].value = parseFloat(_productPrice[i].innerHTML);
+
+
+                //change total
+
+                sub += parseFloat(summaryQuantity[i].value) * parseFloat(_productPrice[i].value);
+                _subTotal.value = parseFloat(sub);
+            }
+            _subTotal.innerHTML = parseFloat(_subTotal.value);
+            _total.innerHTML = parseFloat(_subTotal.value) + parseFloat(_feeShip.value);
+            sub = 0.0;
+        }
+
+        function initAutoComplete() {
+            $('#searchUser').autocomplete({
+                source: function(request, response) {
+                    $.ajax({
+                        url: '@Url.Action("Search", "Order")',
+                        dataType: "json",
+                        data: { Prefix: request.term },
+                        success: function(data) {
+                            response($.map(data,
+                                function(item) {
+                                    console.log(data);
+                                    return { label: item.fullName, Value: item.fullName };
+                                }));
+
+                        },
+                        error: function(xhr, desc, err) {
+                            alert(err);
+                        },
+                    });
+                },
+                select: function(event, ui) {
+                    var searchName = ui.item.value;
+                    $.ajax({
+                        url: '@Url.Action("Search", "Order")',
+                        dataType: "json",
+                        data: { Prefix: searchName },
+                        success: function(data) {
+                            console.log(data);
+                            $(data).each(function(index, item) {
+                                $('#email').val(item.email);
+                                $('#shippingAddress').val(item.shippingAddress);
+                                $('#phone').val(item.phoneNumber);
+                            });
+                        }
+                    });
+                }
+            });
+            $('#searchProduct').autocomplete({
+                source: function(request, response) {
+                    $.ajax({
+                        url: '@Url.Action("SearchProduct", "Order")',
+                        dataType: "json",
+                        data: { Prefix: request.term },
+                        success: function(data) {
+                            response($.map(data,
+                                function(item) {
+                                    console.log(data);
+                                    return { label: item.name, Value: item.name };
+                                }));
+
+                        },
+                        cache: false,
+                        error: function(xhr, desc, err) {
+                            alert(err);
+                        },
+                    });
+                },
+                select: function(event, ui) {
+                    var searchName = ui.item.value;
+                    $.ajax({
+                        url: '@Url.Action("SearchProduct", "Order")',
+                        dataType: "json",
+                        data: { Prefix: searchName },
+                        success: function(data) {
+                            console.log(data);
+                            $(data).each(function(index, item) {
+                                $('#productId').val(item.id);
+                            });
+
+                        }
+                    });
+                }
+            });
+            //click button add new product to list
+            $('#addProductToList').click(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: '@Url.Action("addProductToList", "Order")',
+                    data: { id: $('#productId').val() },
+                    success: function() {
+                        console.log($('#productId').val());
+                        $('#tabelProduct').load("@Url.Action("TableData", "Order")");
+                        $('#productId').val("");
+                        $('#searchProduct').val("");
+                        $('#summary').removeAttr("hidden");
+                    }
+                });
+            });
+        }
+
+
+    </script>
+}
+

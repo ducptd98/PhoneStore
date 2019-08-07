@@ -1,0 +1,59 @@
+﻿@using ElectronicStore.Ultilities
+@*@model List<ElectronicStore.Models.ViewModels.OrderViewModel>*@
+@model List<Order>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<br /> <br />
+<div>
+    <div class="row">
+        <div class="col-8">
+            <h2>Orders</h2>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                @*<th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().Order.Id)</th>
+                <th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().Appointments.Status)</th>
+                <th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().ApplicationUser.FullName)</th>
+                <th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().Appointments.CreatedOn)</th>
+                <th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().Order.Price)</th>
+                <th style="text-align: center"></th>*@
+                <th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().Id)</th>
+                <th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().Appointments.Status)</th>
+                <th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().Appointments.Customer.FullName)</th>
+                <th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().Appointments.CreatedOn)</th>
+                <th style="text-align: center">@Html.DisplayNameFor(m => m.FirstOrDefault().Price)</th>
+                <th style="text-align: center"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @Model)
+            {
+                <tr>
+                    <td style="text-align: center">
+                        @Html.DisplayFor(m => item.Id)
+                    </td>
+                    <td style="text-align: center">
+                        @Enum.GetName(typeof(SD.Status),item.Appointments.Status)
+                    </td>
+                    <td style="text-align: center">
+                        @Html.DisplayFor(m => item.Appointments.Customer.FullName)
+                    </td>
+                    <td style="text-align: center">
+                        @Html.DisplayFor(m => item.Appointments.CreatedOn)
+                    </td>
+                    <td style="text-align: center">
+                        @Html.DisplayFor(m => item.Price)
+                    </td>
+                    <td style="text-align: center">
+                        <a type="button" class="btn btn-primary" href="@Url.Action("Edit/"+item.Id)" ><i class="fas fa-edit"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,211 @@
+﻿@model ElectronicStore.Models.ViewModels.ProductViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<br /><br />
+<h2 class="text-info">Edit</h2>
+<div class="container-fluid justify-content-between">
+    <form method="post" asp-action="Edit" enctype="multipart/form-data">
+
+        <div class="p-4 border rounded row">
+            <div class="text-danger" asp-validation-summary="ModelOnly">
+
+            </div>
+            <input hidden asp-for="Products.Id" />
+            <div class="col-8 border-right" style="border-right">
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.Name"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.Name" readonly class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.Code"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.Code" readonly class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.Price"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.Price" readonly class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.PromotionPrice"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.PromotionPrice" readonly class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.IncludeVAT"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.IncludeVAT" type="checkbox" readonly class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.Warranty"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.Warranty" readonly class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.ProductCategory"></label>
+                    </div>
+                    <div class="col-5">
+                        @*<select asp-for="Products.CategoryId" asp-items="Model.ProductCategories.ToSelectListItem(Model.Products.CategoryId)" class="form-control"></select>*@
+                        <input asp-for="Products.ProductCategory" readonly class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.Brands"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.Brands" readonly class="form-control" />
+                        @*<select asp-for="Products.BrandId" asp-items="Model.Brands.ToSelectListItem(Model.Products.BrandId)" class="form-control"></select>*@
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.ShortDescription"></label>
+                    </div>
+                    <div class="col-5">
+                        <textarea asp-for="Products.ShortDescription" readonly class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.Description"></label>
+                    </div>
+                    <div class="col-5">
+                        <textarea asp-for="Products.Description" readonly class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.CreatedDate"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.CreatedDate" readonly type="text" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Products.CreatedDate" class="table-danger"></span>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.CreatedBy"></label>
+                    </div>
+                    <div class="col-5">
+                        <textarea asp-for="Products.CreatedBy" readonly class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.ModifiedDate"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.ModifiedDate" readonly type="text" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Products.ModifiedDate" class="table-danger"></span>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.ModifiedBy"></label>
+                    </div>
+                    <div class="col-5">
+                        <textarea asp-for="Products.ModifiedBy" readonly class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.Quantity"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.Quantity" readonly type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.SEOTitle"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.SEOTitle" readonly type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.MetaTitle"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.MetaTitle" readonly type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.MetaDescription"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.MetaDescription" readonly type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.MetaKeyword"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.MetaKeyword" readonly type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.Status"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.Status" readonly type="checkbox" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label asp-for="Products.ShowOnHome"></label>
+                    </div>
+                    <div class="col-5">
+                        <input asp-for="Products.ShowOnHome" readonly type="checkbox" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-1">
+
+            </div>
+
+            <div class="col-3">
+                <img src="@Model.Products.Images" width="50%" style="border-radius:5px; border: 1px solid #bbb9b9; margin-top:100%; margin-right:40%;" alt="Logo" />
+            </div>
+
+            <br />
+            <div class="form-group">
+                @*<input type="submit" class="btn btn-primary" value="Update" />*@
+                <a asp-action="Edit" asp-route-id="@Model.Products.Id" class="btn btn-primary">Go to Update</a>
+                <a asp-action="Index" class="btn btn-success">Back To List</a>
+            </div>
+        </div>
+
+    </form>
+</div>
+

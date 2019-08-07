@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ElectronicStore.Models.Brands>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+<br /> <br />
+<div>
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-info">Brands List</h2>
+        </div>
+        <div class="col-5 text-right">
+            <a asp-action="Create" class="btn btn-info"><i class="fas fa-plus"></i> &nbsp; New Category Product</a>
+        </div>
+        <div class="col-1">
+
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div>
+            <table class="table table-striped border">
+                <tr class="table-info">
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.Name)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.Image)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.CreatedDate)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.CreatedBy)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.ModifiedDate)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.ModifiedBy)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.ShowOnHome)
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style="text-align:center">
+                            @Html.DisplayFor(m => item.Name)
+                        </td>
+                        <td style="text-align:center">
+                            <img src="@item.Image" width="10%" style="border-radius:5px; border: 1px solid #bbb9b9;" alt="Card Image" />
+                        </td>
+                        <td style="text-align:center">
+                            @Html.DisplayFor(m => item.CreatedDate)
+                        </td>
+                        <td style="text-align:center">
+                            @Html.DisplayFor(m => item.CreatedBy)
+                        </td>
+                        <td style="text-align:center">
+                            @Html.DisplayFor(m => item.ModifiedDate)
+                        </td>
+                        <td style="text-align:center">
+                            @Html.DisplayFor(m => item.ModifiedBy)
+                        </td>
+                        <td style="text-align:center">
+                            @Html.DisplayFor(m => item.ShowOnHome)
+                        </td>
+                        <td style="text-align:center">
+                            <partial name="_TableButtonPartial" model="@Convert.ToInt32(item.Id)" />
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+

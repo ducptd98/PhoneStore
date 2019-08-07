@@ -1,0 +1,206 @@
+﻿@model ElectronicStore.Models.ViewModels.ProductAttributesViewModel
+@using ElectronicStore.Extensions
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<br /><br />
+<h2 class="text-info">Edit Product Attributes</h2>
+<div class="container justify-content-between">
+    <form method="post" asp-action="Edit" enctype="multipart/form-data">
+        <div class="p-4 border rounded">
+            <div class="text-danger" asp-validation-summary="ModelOnly">
+
+            </div>
+            <input hidden asp-for="ProductAttributes.Id" />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Products"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Products.Name" readonly class="form-control" />
+                    @*<select asp-for="ProductAttributes.ProductId" asp-items="Model.Products.ToSelectListItem(Model.ProductAttributes.ProductId)" class="form-control"></select>*@
+                </div>
+            </div>
+            <label class="text-info">Operating System Details</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.OS"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.OS" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.OS" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.CPU"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.CPU" type="text" class=" form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.CPU" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.RAM"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.RAM" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.RAM" class="table-danger"></span>
+            </div>
+            <label class="text-info">Monitor Details</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.MonitorSize"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.MonitorSize" type="text" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.MonitorSize" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Resolution"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Resolution" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.Resolution" class="table-danger"></span>
+            </div>
+            <label class="text-info">Camera Details</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.MainCamera"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.MainCamera" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.MainCamera" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.FrontCamera"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.FrontCamera" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.FrontCamera" class="table-danger"></span>
+            </div>
+            <label class="text-info">Connectivity</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Connection2G"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Connection2G" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.Connection2G" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Connection3G"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Connection3G" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.Connection3G" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Connection4G"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Connection4G" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.Connection4G" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Wifi"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Wifi" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.Wifi" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Bluetooth"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Bluetooth" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.Bluetooth" class="table-danger"></span>
+            </div>
+            <label class="text-info">Storage</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.ExternalStorage"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.ExternalStorage" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.ExternalStorage" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.SIMCount"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.SIMCount" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.SIMCount" class="table-danger"></span>
+            </div>
+            <label class="text-info">Capacity</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.Capacity"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.Capacity" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.Capacity" class="table-danger"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.PinCapacity"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.PinCapacity" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.PinCapacity" class="table-danger"></span>
+            </div>
+            <label class="text-info">Others</label>
+            <hr />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductAttributes.GPS"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductAttributes.GPS" class="form-control" />
+                </div>
+                <span asp-validation-for="ProductAttributes.GPS" class="table-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Update" />
+                <a asp-action="Index" class="btn btn-success">Back To List</a>
+            </div>
+        </div>
+    </form>
+</div>
+@section Scripts{
+    @{ await Html.RenderPartialAsync("~/Views/Admin/Shared/_ValidationScriptsPartial.cshtml");}
+    }
+
+

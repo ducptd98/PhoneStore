@@ -1,0 +1,529 @@
+﻿@model List<ElectronicStore.Models.ViewModels.DetaisViewModel>
+@using System.Collections
+@using ElectronicStore.Data
+@using Microsoft.EntityFrameworkCore
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Customer/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<h3 class="text-gray-100">@Model.FirstOrDefault().Products.Name</h3>
+<hr />
+<br />
+
+<div class="row container">
+
+    <div class="col-lg-3">
+        @*<img src="@Model.FirstOrDefault().Products.Images" width="100%" style="margin-top:125px;" alt="Product Image" />*@
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                @for (int i = 0; i < @Model.FirstOrDefault().Products.MoreImages.Count; i++)
+                {
+                    if (i == 0)
+                    {
+                        <li data-target="#myCarousel" data-slide-to="@i" class="active"></li>
+                    }
+                    else
+                    {
+                        <li data-target="#myCarousel" data-slide-to="@i"></li>
+                    }
+                }
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                @for (int i = 0; i < @Model.FirstOrDefault().Products.MoreImages.Count; i++)
+                {
+                    if (i == 0)
+                    {
+                        <div class="carousel-item active">
+                            <img src="@Model.FirstOrDefault().Products.MoreImages.ElementAt(i).ImagePath" alt="" width="100%" height="100%">
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="carousel-item">
+                            <img src="@Model.FirstOrDefault().Products.MoreImages.ElementAt(i).ImagePath" alt="" width="100%" height="100%">
+                        </div>
+                    }
+                }
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark"></span>
+            </a>
+        </div>
+    </div>
+
+<div class="col-lg-4   border-left">
+    <div class="row" style="margin-left: 20px; margin-top: 125px;">
+        <label><b>PRICE: </b></label>
+        @if (Model.FirstOrDefault().Products.PromotionPrice > 0)
+        {
+
+            <lable class="text-gray-100" style="margin-left: 20px;"><b><strike>@Model.FirstOrDefault().Products.Price</strike></b></lable>
+            <label class="text-danger" style="margin-left: 20px;"><b>@Model.FirstOrDefault().Products.PromotionPrice</b></label>
+            <lable style="margin-left: 10px;"><b>VND</b></lable>
+        }
+        else
+        {
+            <lable class="text-gray-100" style="margin-left: 20px;"><b>@Model.FirstOrDefault().Products.Price</b></lable>
+            <lable style="margin-left: 10px;"><b>VND</b></lable>
+        }
+    </div>
+    <div class="row" style="margin-left: 20px;">
+        <label><b>CATEGORY: </b></label>
+        <label style="margin-left: 20px;">@Model.FirstOrDefault().Products.ProductCategory.Name.ToUpper()</label>
+    </div>
+    <div class="row" style="margin-left: 20px;">
+        <label><b>BRAND: </b></label>
+        <label style="margin-left: 20px;"> @Model.FirstOrDefault().Products.Brands.Name.ToUpper()</label>
+    </div>
+    <div class="row" style="margin-left: 20px;">
+        <label><b>AVAILABLE: </b></label>
+        @if (Model.FirstOrDefault().Products.Quantity > 0)
+        {
+            <label style="margin-left: 20px;">IN STOCK</label>
+        }
+        else
+        {
+            <label style="margin-left: 20px;" class="text-danger"><b>OUT OF STOCK</b></label>
+        }
+    </div>
+    @*<div class="row" style="margin-left:20px;">
+                <label><b>QUANTITY:      </b></label>
+                <select asp-for="@Model.FirstOrDefault().Quantity" style="margin-left: 20px;">
+                    @if (Model.FirstOrDefault().Products.Quantity == 0)
+                    {
+                        <option>0</option>
+                    }
+                    else
+                    {
+                        @for (int i = 1; i <= Model.FirstOrDefault().Products.Quantity; i++)
+                        {
+                            <option>@i</option>
+                        }
+                    }
+                </select>
+            </div>*@
+    <br/>
+
+    <form method="post">
+        @if (Model.FirstOrDefault().Products.Quantity != 0)
+        {
+            <button type="submit" class="btn btn-light" style="margin-left: 20px; background-color: yellow" asp-route-id="@Model.FirstOrDefault().Products.Id">
+                <i class="fas fa-cart-arrow-down"></i> ADD TO CART
+            </button>
+        }
+        else
+        {
+            <button type="submit" class="btn btn-light" style="margin-left: 20px; background-color: yellow" disabled>
+                <i class="fas fa-cart-arrow-down"></i> ADD TO CART
+            </button>
+        }
+    </form>
+</div>
+<div class="col-lg-5 border-left">
+<h3 class="text-info">PRODUCT DETAILS</h3>
+<br/>
+<div class="row">
+    <div class="col-4">
+        <label><b>CPU</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.CPU</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Monitor</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.MonitorSize </label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Resolution</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.Resolution </label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>OS</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.OS</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Main Camera</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.MainCamera MP</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Sub Camera</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.FrontCamera MP</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>RAM</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.RAM GB</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Storage</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.ExternalStorage GB</label>
+    </div>
+</div>
+<br/>
+<div class="row">
+<div class="col-3">
+
+</div>
+<div class="col-6">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    View More
+</button>
+@*@*Modal*@
+<div class="modal" id="myModal">
+<div class="modal-dialog" style="width: 500px;">
+<div class="modal-content">
+
+<!-- Modal Header -->
+<div class="modal-header">
+    <h4 class="modal-title">@Model.FirstOrDefault().Products.Name</h4>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<!-- Modal body -->
+<div class="modal-body">
+<h3 class="text-gray-100"></h3>
+<br/>
+<div class="row">
+    <div class="col-lg-4">
+
+    </div>
+    <div class="col-lg-4">
+        <img src="@Model.FirstOrDefault().Products.Images" width="100%" alt="Product Image"/>
+    </div>
+    <div class="col-lg-4">
+
+    </div>
+</div>
+<br/>
+<h3 class="text-info">PRODUCT DETAILS</h3>
+<br/>
+<hr/>
+<h4 class="text-info">Operating System Details</h4>
+<hr/>
+<div class="row">
+
+    <div class="col-4">
+        <label><b>CPU</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.CPU</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>OS</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.OS</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>RAM</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.RAM GB</label>
+    </div>
+</div>
+<hr/>
+<h4 class="text-info">Monitors Details</h4>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Monitor</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.MonitorSize </label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Resolution</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.Resolution </label>
+    </div>
+</div>
+<hr/>
+<h4 class="text-info">Camera Details</h4>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Main Camera</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.MainCamera MP</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Sub Camera</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.FrontCamera MP</label>
+    </div>
+</div>
+<hr/>
+<h4 class="text-info">Storage Details</h4>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Storage</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.ExternalStorage GB</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>SIM</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.SIMCount SIM</label>
+    </div>
+</div>
+<hr/>
+<h4 class="text-info">Connectivity Details</h4>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>2G</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.Connection2G</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>3G</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.Connection3G</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>4G</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.Connection4G</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Wifi</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.Wifi</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Bluetooth</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.Bluetooth</label>
+    </div>
+</div>
+<hr/>
+<h4 class="text-info">Capacity Details</h4>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Capacity</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.Capacity g</label>
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>Pin</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.PinCapacity mAh</label>
+    </div>
+</div>
+<hr/>
+<h4 class="text-info">Others</h4>
+<hr/>
+<div class="row">
+    <div class="col-4">
+        <label><b>GPS</b></label>
+
+    </div>
+    <div class="col-8">
+        <label>@Model.FirstOrDefault().ProductAttributes.GPS</label>
+    </div>
+</div>
+<br/>
+</div>
+
+<!-- Modal footer -->
+<div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-3">
+
+</div>
+</div>
+
+</div>
+</div>
+
+<br />
+<br />
+<div class="row container">
+    <button type="button" style="width:100%; text-align:left;" class="btn btn-primary" data-toggle="collapse" data-target="#description">Product Description<i class="fas fa-plus" style="margin-left:900px;"></i></button>
+
+    <div id="description" class="collapse">
+        <br />
+        <br />
+        @Model.FirstOrDefault().Products.Description
+    </div>
+</div>
+<br />
+
+<div class=" container">
+    @*<button type="button" style="width:100%; text-align:left;" class="btn btn-primary" data-toggle="collapse" data-target="#description">Product Description<i class="fas fa-plus" style="margin-left:900px;"></i></button>
+
+        <div id="description" class="collapse">
+            <br />
+            <br />
+            @Model.FirstOrDefault().Products.Description
+        </div>*@
+    <div class="row">
+        <h3 class="text-info">RELATED PRODUCTS</h3>
+    </div>
+    <br />
+    <div class="row">
+        @if (Model?.Count > 0)
+        {
+            var _db = (ApplicationDbContext)ViewData["DbContext"];
+            List<Products> productsList = _db.Products.Include(p => p.ProductCategory).Include(p => p.Brands).Where(p => p.Brands.Name == Model.FirstOrDefault().Products.Brands.Name).ToList();
+
+            @Html.Partial("~/Views/Customer/Shared/_RelatedProducts.cshtml", productsList);
+        }
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $('#numberSpinner').spinner({
+            min: 1
+        });
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+}

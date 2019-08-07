@@ -1,0 +1,95 @@
+﻿@model IEnumerable<ElectronicStore.Models.ApplicationUsers>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<br /> <br />
+<div>
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-info">Users List</h2>
+        </div>
+        <div class="col-5 text-right">
+            <a asp-area="Identity" asp-page="/Account/CreateAdminUser" class="btn btn-info"><i class="fas fa-plus"></i> &nbsp; New User</a>
+        </div>
+        <div class="col-1">
+
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div>
+            <table class="table table-striped border">
+                <tr class="table-info">
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.FullName)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.Email)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.PhoneNumber)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.Address)
+                    </th>
+                    <th style="text-align:center">
+                        Role
+                    </th>
+                    <th>
+                        Disabled
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.FullName)
+                    </td>
+                    @*<td style="text-align:center">
+            <img src="@item.Image" width="10%" style="border-radius:5px; border: 1px solid #bbb9b9;" alt="Card Image" />
+        </td>*@
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.Email)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.PhoneNumber)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.Address)
+                    </td>
+                    <td style="text-align:center">
+                        @if (item.IsSupperAdmin)
+                        {
+                            <label>Admin</label>
+                        }
+                        else
+                        {
+                            <label>Shipper</label>
+                        }
+                    </td>
+                    <td>
+                        @if (item.LockoutEnd != null && item.LockoutEnd > DateTime.Now)
+                        {
+                            <label>Disabled</label>
+                        }
+                    </td>
+                    <td></td>
+                    <td>
+                        @if (item.LockoutEnd == null || item.LockoutEnd < DateTime.Now)
+                        {
+
+                            <a type="button" class="btn btn-danger" href="@Url.Action("Delete/"+item.Id)"><i class="fas fa-trash-alt"></i></a>
+                        }
+                    </td>
+
+                </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+

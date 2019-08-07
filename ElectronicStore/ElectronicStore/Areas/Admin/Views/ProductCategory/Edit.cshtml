@@ -1,0 +1,130 @@
+﻿@model ElectronicStore.Models.ProductCategory
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+<br /><br />
+<h2 class="text-info">Edit</h2>
+<div class="container justify-content-between">
+    <form method="post" asp-action="Edit">
+        
+        <div class="p-4 border rounded">
+            <div class="text-danger" asp-validation-summary="ModelOnly">
+
+            </div>
+            <input hidden asp-for="Id" />
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Name"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <span asp-validation-for="Name" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="MetaTitle"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="MetaTitle" class="form-control" />
+                </div>
+                <span asp-validation-for="MetaTitle" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ParenId"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ParenId" class="form-control" />
+                </div>
+                <span asp-validation-for="ParenId" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="DisplayOrder"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="DisplayOrder" class="form-control" />
+                </div>
+                <span asp-validation-for="DisplayOrder" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="MetaKeyword"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="MetaKeyword" class="form-control" />
+                </div>
+                <span asp-validation-for="MetaKeyword" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="MetaDescription"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="MetaDescription" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ModifiedDate"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ModifiedDate" readonly type="text" id="modified" class="form-control" />
+                </div>
+                <span asp-validation-for="ModifiedDate" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Status"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="Status" type="checkbox" class="form-control" />
+                </div>
+                <span asp-validation-for="Status" class="table-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ShowOnHome"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ShowOnHome" type="checkbox" class="form-control" />
+                </div>
+                <span asp-validation-for="ShowOnHome" class="table-danger"></span>
+            </div>
+
+            <br />
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Update" />
+                <a asp-action="Index" class="btn btn-success">Back To List</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("~/Views/Admin/Shared/_ValidationScriptsPartial.cshtml");}
+    <script>
+            $(document).ready(function () {
+                var d = new Date();
+
+                var month = d.getMonth() + 1;
+                var day = d.getDate();
+
+                var output = d.getFullYear() + '/' +
+                    (month < 10 ? '0' : '') + month + '/' +
+                    (day < 10 ? '0' : '') + day;
+
+                var h = d.getHours();
+                var m = d.getMinutes();
+                var values = h + ":" + m;
+
+                var bill_name = "HD" + d.getFullYear() + month + day;
+                $("#created").attr('value', output + " " + values);
+                $("#modified").attr('value', output + " " + values);
+                $("#billname").attr('value', bill_name);
+            });
+    </script>
+}
+

@@ -1,0 +1,501 @@
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.deps.json
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.json
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.dev.json
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.dll
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csprojAssemblyReference.cache
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CoreCompileInputs.cache
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cache
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfoInputs.cache
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfo.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.input.cache
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.output.cache
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorCoreGenerate.cache
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cache
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CopyComplete
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\About.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Contact.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Index.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Privacy.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\Error.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_AdminLayout.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_LoginPartial.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\Error.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_Layout.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_LoginPartial.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\HomeAdmin\Index.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Index.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_Layout.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Create.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_TableButtonPartial.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Edit.g.cshtml.cs
+D:\Coding\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Details.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.deps.json
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.json
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.dev.json
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.dll
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csprojAssemblyReference.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CoreCompileInputs.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfoInputs.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfo.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.input.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.output.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorCoreGenerate.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\HomeAdmin\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Create.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Details.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Edit.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\About.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Contact.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Privacy.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\Error.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_AdminLayout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_Layout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_LoginPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\Error.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_Layout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_LoginPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_TableButtonPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CopyComplete
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Create.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Edit.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Details.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.deps.json
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.json
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.dev.json
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.dll
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csprojAssemblyReference.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CoreCompileInputs.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfoInputs.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfo.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.input.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.output.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorCoreGenerate.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Create.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Details.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Edit.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\HomeAdmin\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Create.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Details.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Edit.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\About.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Contact.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Privacy.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\Error.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_AdminLayout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_Layout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_LoginPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\Error.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_Layout.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_LoginPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewImports.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewStart.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_TableButtonPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cache
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CopyComplete
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Create.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Edit.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Details.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Create.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Edit.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Details.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\CreateAdminUser.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AddAdminUserDefault.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ApplicationUsers\Index.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Details.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_RelatedProduct.g.cshtml.cs
+D:\Coding\ASP.NET\Backup\ElectronicStore1707\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_RelatedProducts.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.deps.json
+D:\Study\Github\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.json
+D:\Study\Github\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.dev.json
+D:\Study\Github\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Study\Github\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Study\Github\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.dll
+D:\Study\Github\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csprojAssemblyReference.cache
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CoreCompileInputs.cache
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cache
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfoInputs.cache
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfo.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.input.cache
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.output.cache
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorCoreGenerate.cache
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ApplicationUsers\Index.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Create.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Details.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Edit.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Index.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\HomeAdmin\Index.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Create.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Details.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Edit.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Index.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Create.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Details.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Edit.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Index.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Create.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Details.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Edit.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Index.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\About.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Contact.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Details.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Index.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Privacy.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewImports.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewStart.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AddAdminUserDefault.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\CreateAdminUser.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\Error.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_AdminLayout.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_Layout.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_LoginPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewImports.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewStart.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\Error.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_Layout.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_LoginPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_RelatedProduct.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_RelatedProducts.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewImports.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewStart.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_TableButtonPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cache
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cs
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Study\Github\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CopyComplete
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.deps.json
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.json
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.runtimeconfig.dev.json
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.dll
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\bin\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CoreCompileInputs.cache
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cache
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorAssemblyInfo.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfoInputs.cache
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.AssemblyInfo.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.input.cache
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.TagHelpers.output.cache
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorCoreGenerate.cache
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ApplicationUsers\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Create.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Details.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Edit.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Brands\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\HomeAdmin\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Create.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Details.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Edit.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductAttributes\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Create.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Details.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Edit.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductCategory\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Create.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Details.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Edit.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\About.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Contact.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Details.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\Home\Privacy.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewImports.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\_ViewStart.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AddAdminUserDefault.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\CreateAdminUser.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\Error.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_AdminLayout.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_Layout.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_LoginPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewImports.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Admin\_ViewStart.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\Error.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_Layout.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_LoginPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_RelatedProduct.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_RelatedProducts.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewImports.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Customer\_ViewStart.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_TableButtonPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cache
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.RazorTargetAssemblyInfo.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.Views.pdb
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.dll
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.pdb
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csproj.CopyComplete
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Customer\Views\ShoppingCart\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Order\Index.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Order\Create.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Order\Edit.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Order\_TableProductPartial.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\YourOrders.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Details.g.cshtml.cs
+D:\Study\Visual Project\ASP.NET\ElectronicStore\ElectronicStore\obj\Debug\netcoreapp2.1\ElectronicStore.csprojAssemblyReference.cache

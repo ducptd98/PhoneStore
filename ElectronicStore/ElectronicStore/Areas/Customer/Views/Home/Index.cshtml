@@ -1,0 +1,125 @@
+﻿
+@*@model ElectronicStore.Helper.PaginatedList<Products>*@
+@model List<Products>
+<br /><br />
+<div class="row">
+    <div class="col-4">
+
+    </div>
+    <div class="col-4 text-center">
+        <a href="#"><h2 class="text-info">AVAILABLE</h2></a>
+    </div>
+    <div class="col-4">
+
+    </div>
+    <br />
+    <br />
+    @foreach (var product in Model)
+    {
+        @if (product.ProductCategory.Name == "Mobile")
+         {
+             <div class="col-3">
+                 <div class=" mb-3">
+
+                     <img class="card-img-top" style="height:100px;width:100px;margin-left:25%; background-color:aliceblue" src="@product.Images" alt="Card Image" />
+                     <div class="card-body">
+                         <div>
+                             <h4 class="font-weight-normal my-0">
+                                 <label style="font-size:10px; color:black;"><b>@product.Name</b></label>
+                             </h4>
+                         </div>
+                         <div class="d-flex justify-content-between align-items-center">
+
+                             <div class="btn-group">
+                                 @if (product.PromotionPrice > 0)
+                                 {
+                                     <label style="font-size:15px; color: gray;" class="font-weight-lighter"><strike>@product.Price</strike></label>
+                                     <label style="font-size:15px; color: red;margin-left:10px;">@product.PromotionPrice VND</label>
+                                 }
+                                 else
+                                 {
+                                     <label style="font-size:15px; color: black;">@product.Price VND</label>
+                                 }
+
+                             </div>
+                             <a asp-action="Details" asp-controller="Home" class="btn" style="margin-left:10px;background-color:aliceblue;" asp-route-id="@product.Id"><label style="font-size:10px; text-align:center">View Details</label></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         }
+
+    }
+          
+</div>
+<div class="row offset-10 col-2">
+    @*@{
+        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    }
+    <a asp-action="Index"
+       asp-area="Customer" asp-controller="Home"
+       asp-route-pageNumber="@(Model.PageIndex - 1)"
+       asp-route-searchString="@ViewData["SearchString"]"
+       class="btn @prevDisabled" style="cursor: pointer">
+        Previous
+    </a>
+
+    <a asp-action="Index"
+       asp-area="Customer" asp-controller="Home"
+       asp-route-pageNumber="@(Model.PageIndex + 1)"
+       asp-route-searchString="@ViewData["SearchString"]"
+       class="btn @nextDisabled" style="cursor: pointer">
+        Next
+    </a>*@
+    <div page-model="@ViewData["PagingInfo"] as PagingInfo" page-action="Index" page-classes-enabled="true" 
+         page-class="btn border" page-class-selected="btn btn-primary active" page-class-normal="btn active" class="btn-group m-1"></div>
+</div>
+<div class="row">
+    <div class="col-4">
+
+    </div>
+    <div class="col-4 text-center">
+        <a href="#"><h2 class="text-info">DISCOUNT</h2></a>
+    </div>
+    <div class="col-4">
+
+    </div>
+</div>
+<br />
+<br />
+<div class="row">
+    @foreach (var product in Model)
+    {
+        if (product.PromotionPrice > 0)
+        {
+            <div class="col-3">
+                <div class=" mb-3">
+                    <img class="card-img-top" style="height:100px;width:100px;margin-left:25%" src="@product.Images" alt="Card Image" />
+                    <div class="card-body">
+                        <div>
+                            <h4 class="font-weight-normal my-0">
+                                <label style="font-size:10px; color:black;"><b>@product.Name</b></label>
+                            </h4>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+
+                                @if (product.PromotionPrice > 0)
+                                {
+                                    <label style="font-size:15px; color: gray;"><strike>@product.Price</strike></label>
+                                    <label style="font-size:15px; color: red;margin-left:10px;">@product.PromotionPrice VND</label>
+                                }
+                                else
+                                {
+                                    <label style="font-size:15px; color: black;">@product.Price VND</label>
+                                }
+                            </div>
+                            <a asp-action="Details" asp-controller="Home" class="btn" style="margin-left:10px;background-color:aliceblue;" asp-route-id="@product.Id"><label style="font-size:10px; text-align:center">View Details</label></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

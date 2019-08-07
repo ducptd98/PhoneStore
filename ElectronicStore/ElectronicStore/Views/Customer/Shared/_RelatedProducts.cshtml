@@ -1,0 +1,40 @@
+﻿@model List<ElectronicStore.Models.Products>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@foreach (var product in Model)
+{
+    @if (product.ProductCategory.Name == "Mobile")
+    {
+        <div class="col-3">
+            <div class=" mb-3">
+
+                <img class="card-img-top" style="height:100px;width:100px;margin-left:25%; background-color:aliceblue" src="@product.Images" alt="Card Image" />
+                <div class="card-body">
+                    <div>
+                        <h4 class="font-weight-normal my-0">
+                            <label style="font-size:10px; color:black;"><b>@product.Name</b></label>
+                        </h4>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <div class="btn-group">
+                            @if (product.PromotionPrice > 0)
+                            {
+                                <label style="font-size:15px; color: gray;" class="font-weight-lighter"><strike>@product.Price</strike></label>
+                                <label style="font-size:15px; color: red;margin-left:10px;">@product.PromotionPrice VND</label>
+                            }
+                            else
+                            {
+                                <label style="font-size:15px; color: black;">@product.Price VND</label>
+                            }
+
+                        </div>
+                        <a asp-action="Details" asp-controller="Home" class="btn" style="margin-left:10px;background-color:aliceblue;" asp-route-id="@product.Id"><label style="font-size:10px; text-align:center">View Details</label></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+}

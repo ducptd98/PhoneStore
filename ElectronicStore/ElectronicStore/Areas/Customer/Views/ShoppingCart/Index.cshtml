@@ -1,0 +1,281 @@
+﻿@using System.Linq
+@using ElectronicStore.Extensions
+@using Microsoft.AspNetCore.Http
+@using Microsoft.CodeAnalysis
+@model ElectronicStore.Models.ViewModels.ShoppingCartViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Customer/Shared/_Layout.cshtml";
+}
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+
+}
+
+<form method="post">
+    <br /><br />
+    <h2 class="text-info">Your Shopping Cart</h2>
+    <br />
+    @if (Model.Products.Count > 0)
+    {
+    <div class="container border border-secondary rounded" style="padding: 15px;">
+        <div class="row">
+            <div class="col-8" style="border-right: 1px solid #bbb9b9;">
+                <table class="table table-striped">
+                    <tr class="table-info">
+                        <th style="text-align: center; width: 15%">
+
+                        </th>
+                        <th style="text-align: center; width: 20%">
+                            <label asp-for="@Model.Products.FirstOrDefault().Name"></label>
+                        </th>
+                        <th style="text-align: center;">
+                            <label asp-for="@Model.Products.FirstOrDefault().Price"></label>
+                        </th>
+                        <th style="text-align: center;">
+                            <label asp-for="@Model.Products.FirstOrDefault().Quantity"></label>
+                        </th>
+                        <th style="text-align: center;">
+                        </th>
+                    </tr>
+                    @foreach (var item in Model.Products)
+                    {
+                    <tr style="padding: 50px;">
+                        <td>
+                            <a asp-area="Customer" asp-controller="Home" asp-action="Details" asp-route-id="@item.Id">
+                                <img src="@item.Images" width="100%" style="margin: auto; display: block; border-radius: 5px; border: 1px solid #bbb9b9" />
+                            </a>
+                        </td>
+                        <td style="text-align:center">
+                            @Html.DisplayFor(c => item.Name)
+                        </td>
+                        <td style="text-align: center">
+                            @if (item.PromotionPrice == 0)
+                            {
+                            @Html.DisplayFor(c => item.Price)
+                            }
+                            else
+                            {
+                            @Html.DisplayFor(c => item.PromotionPrice)
+                            }
+                        </td>
+                        <td style="text-align: center; align-content:center">
+                            <input name="quantity" type="number" asp-for="@item.Quantity" max="@item.Quantity" min="1" value="1" onchange="getQuantity()" />
+                        </td>
+                        <td style="text-align: center">
+                            <button type="submit" class="btn btn-danger" asp-area="Customer" asp-action="Remove" asp-route-id="@item.Id">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    }
+                </table>
+            </div>
+            <div class="col-4" style="padding-left: 30px;">
+                <div class="row">
+                    <div class="col-12">
+                        Customer Name:
+                    </div>
+                    <div class="col-12" style="padding-bottom: 15px;">
+                        <input asp-for="@Model.Appointments.Customer.FullName" class="form-control" id="fullname" readonly />
+                    </div>
+                    <div class="col-12">
+                        Customer Phone:
+                    </div>
+                    <div class="col-12" style="padding-bottom: 15px;">
+                        <input asp-for="@Model.Appointments.Customer.PhoneNumber" class="form-control" id="phone" readonly />
+                    </div>
+                    <div class="col-12">
+                        Customer Shipping Address:
+                    </div>
+                    <div class="col-12" style="padding-bottom: 15px;">
+                        <input asp-for="@Model.Appointments.Customer.ShippingAddress" class="form-control" id="shippingaddress" readonly />
+                    </div>
+                    <div class="col-12">
+                        Customer Email:
+                    </div>
+                    <div class="col-12" style="padding-bottom: 15px;">
+                        <input asp-for="@Model.Appointments.Customer.Email" class="form-control" id="email" readonly />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row border-top pt-3">
+            <div class="col-7">
+                <h3>Shipping Address</h3>
+                <labe class="col-12"><b>Name:</b>@Html.DisplayFor(m => m.Appointments.Customer.FullName)</labe> <br />
+                <label class="col-12"><b>Shipping Address:</b> @Html.DisplayFor(m => m.Appointments.Customer.ShippingAddress)</label><br />
+                <label class="col-12"><b>Phone:</b>: @Html.DisplayFor(m => m.Appointments.Customer.PhoneNumber)</label><br />
+
+
+                <div class="col-12">
+                    <input type="checkbox" id="optionAddress" /> Option Address @*Check Javascipt to readonly #customAddress*@
+                </div>
+
+
+                <div class="text-info col-12">
+                    <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Change Shipping Address Default</a>
+                </div>
+                <div class="col-12"></div>
+                <h3>Shipping Method</h3>
+                <div>
+                    <div>
+                        <input type="radio" value="15000" id="feeShipStandart" name="typeShip" onclick="getFeeShip()" checked />
+                        <strong>Standart (15 000VND)</strong>
+                    </div>
+                    <div>
+                        <input type="radio" value="45000" id="feeShipExpress" name="typeShip" onclick="getFeeShip()" />
+                        <strong>Express (45 000VND)</strong>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-5">
+                <h3>Order Summary</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th><label asp-for="Products.FirstOrDefault().Name"></label></th>
+                            <th class="text-center"><label asp-for="Products.FirstOrDefault().Quantity"></label></th>
+                            <th class="text-right"><label asp-for="Products.FirstOrDefault().Price"></label></th>
+                        </tr>
+                        @foreach (var item in Model.Products)
+                        {
+                        <tr style="padding: 50px;">
+
+                            <td style="text-align: left">
+                                @Html.DisplayFor(c => item.Name)
+                            </td>
+                            <td style="text-align: center; align-content: center" name="summaryQuantity">
+                                @Html.DisplayFor(c => item.Quantity)
+                            </td>
+                            <td style="text-align: right">
+                                <label name="productPrice">
+                                    @if (item.PromotionPrice == 0)
+                                    {
+                                    @Html.DisplayFor(c => item.Price)
+                                    }
+                                    else
+                                    {
+                                    @Html.DisplayFor(c => item.PromotionPrice)
+                                    }
+                                </label>
+                            </td>
+                        </tr>
+                        }
+                        <tr>
+                            <td>Sub Total</td>
+                            <td colspan="2" class="text-right">
+                                <label id="subTotal"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fee Shipping</td>
+                            <td colspan="2" class="text-right">
+                                <label >
+                                    <input type="text" id="feeship" name="FeeShip" readonly class="border-0 text-right" asp-for="Order.feeShip"/>
+                                </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>Order Total</strong></td>
+                            <td colspan="2" class="text-right">
+                                <label id="total">
+
+                                </label>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <div class="row d-flex mt-5">
+            <div class="col-10"></div>
+            <div class="col-2 right">
+                <input type="submit" id="btnPlaceOrder" class="btn btn-success" value="Payment"/>
+            </div>
+        </div>
+
+    </div>
+    }
+    else
+    {
+    <div>No items in cart</div>
+    }
+</form>
+@section Scripts
+{
+    <script>
+
+        //khai bao
+        var _productPrice = document.getElementsByName('productPrice');
+        var summaryQuantity = document.getElementsByName('summaryQuantity');
+        var curQuantity = document.getElementsByName('quantity');
+        var _total = document.getElementById('total');
+        var _subTotal = document.getElementById('subTotal');
+        var _feeShip = document.getElementById("feeship");
+        var sub = 0.0;
+
+        //readonly when don't use optionAddress
+    document.getElementById('optionAddress').onchange = function () {
+        if (!this.checked) {
+            document.getElementById('fullname').setAttribute('readonly', 'readonly');
+            document.getElementById('phone').setAttribute('readonly', 'readonly');
+            document.getElementById('shippingaddress').setAttribute('readonly', 'readonly');
+            document.getElementById('email').setAttribute('readonly', 'readonly');
+        } else {
+            document.getElementById('fullname').removeAttribute('readonly');
+            document.getElementById('phone').removeAttribute('readonly');
+            document.getElementById('shippingaddress').removeAttribute('readonly');
+            document.getElementById('email').removeAttribute('readonly');
+        }
+        console.log(!this.checked);
+        };
+
+
+
+        //Load feeship and subtotal default
+        var type1 = document.getElementsByName("typeShip");
+        _feeShip.innerHTML = type1[0].value;
+        _feeShip.value = type1[0].value;
+
+        //load total price default
+        for (var i = 0; i < @Model.Products.Count; i++) {
+            //change quantity
+            summaryQuantity[i].value = curQuantity[i].value;
+            summaryQuantity[i].innerHTML = curQuantity[i].value;
+
+            _productPrice[i].value = parseFloat(_productPrice[i].innerHTML);
+
+
+            //change total
+
+            sub += parseFloat(summaryQuantity[i].value) * parseFloat(_productPrice[i].value);
+            _subTotal.value = parseFloat(sub);
+        }
+        _subTotal.innerHTML = parseFloat(_subTotal.value);
+        _total.innerHTML = parseFloat(_subTotal.value) + parseFloat(_feeShip.value);
+        sub = 0.0;
+
+        //get feeship when change and set total price
+        function getFeeShip() {
+            var type = document.getElementsByName("typeShip");
+            if (type[0].checked) {
+                _feeShip.innerHTML = type[0].value;
+                _feeShip.value = type[0].value;
+            } else {
+                _feeShip.innerHTML = type[1].value;
+                _feeShip.value = type[1].value;
+            }
+            //Change Total
+        }
+
+
+    </script>
+}
+
+
+

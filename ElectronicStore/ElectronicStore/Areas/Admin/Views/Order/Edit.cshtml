@@ -1,0 +1,161 @@
+﻿@using ElectronicStore.Extensions
+@using ElectronicStore.Ultilities
+@*@model ElectronicStore.Models.ViewModels.OrderViewModel*@
+@model Order
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <h2>Order Edit Status: #@Model.Id</h2>
+    </div>
+    <div class="row p-3 border-dark">
+        <h4 class="col-12">Order & Customer Information</h4>
+        <div class="col-6 p-4">
+            <h5>Order: #@Model.Id</h5>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><strong>Order Date:</strong> @Model.Appointments.CreatedOn</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Order Status:</strong> @Enum.GetName(typeof(SD.Status), @Model.Appointments.Status)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Order Total:</strong> @Html.DisplayFor(m => m.Price) </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6">
+            <h5>Customer Infomation:</h5>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><strong>Customer Name: </strong> @Model.Appointments.Customer.FullName</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer Email:</strong> @Model.Appointments.Customer.Email</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer Address:</strong> @Model.Appointments.Customer.Address</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row p-3 border-dark">
+        <h4 class="col-12">Address Information</h4>
+        <div class="col-12 p-4">
+            <h5>Shipping Address:</h5>
+            <p>
+                <strong>@Html.DisplayFor(m => m.Appointments.Customer.FullName)</strong><br />
+                <span>@Html.DisplayFor(m => m.Appointments.Customer.ShippingAddress)</span><br />
+                <span>@Html.DisplayFor(m => m.Appointments.Customer.PhoneNumber)</span>
+            </p>
+        </div>
+    </div>
+    <div class="row p-3 border-dark">
+        <h4 class="col-12">Order Total & Action</h4>
+        <div class="col-6 p-4">
+            <h5>History & Action</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td><label asp-for="@Model.Appointments.CreatedOn"></label></td>
+                        <td><label asp-for="Appointments.Status"></label></td>
+                        <td><label asp-for="Appointments.LatestUpdatedBy"></label></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Html.DisplayFor(m => m.Appointments.CreatedOn)</td>
+                        <td>@Enum.GetName(typeof(SD.Status), @Model.Appointments.Status)</td>
+                        <td>@Html.DisplayFor(m => m.Appointments.LatestUpdatedBy.FullName)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form method="post">
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-3">Status</label>
+                        <div class="col-9">
+                            @*<select class="form-control">
+                                @foreach (var item in Enum.GetNames(typeof(SD.Status)))
+                                {
+                                    <option asp-for="@Model.Appointments.Status" label="@item" value="@Enum.Parse(typeof(SD.Status),@item)"></option>
+                                }
+                            </select>*@
+                            <select asp-for="@Model.Appointments.Status" asp-items="@Html.GetEnumSelectList<SD.Status>()" class="form-control"></select>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="offset-5 col-10">
+                        <input class="btn btn-primary" type="submit" value="Save">
+                            <i class="fa fa-check"></i>
+                        </input>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-6">
+            <table class="table">
+                <tbody>
+                    <tr>
+                    <tr>
+
+                        <td style="text-align: left">
+                            @Html.DisplayFor(c => @Model.Products.Name)
+                        </td>
+                        <td style="text-align: center; align-content: center" name="summaryQuantity">
+                            @Html.DisplayFor(c => @Model.Quantity)
+                        </td>
+                        <td style="text-align: right">
+                            <label name="productPrice">
+                                @if (@Model.Products.PromotionPrice == 0)
+                                {
+                                    @Html.DisplayFor(c => @Model.Products.Price)
+                                }
+                                else
+                                {
+                                    @Html.DisplayFor(c => @Model.Products.PromotionPrice)
+                                }
+                            </label>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Fee Shipping</td>
+                        <td colspan="2" class="text-right">
+                            <label id="feeship">@Html.DisplayFor(m=>m.feeShip)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td colspan="2" class="text-right">
+                            <label id="discount">@Html.DisplayFor(m => m.Discount)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Order Total</strong></td>
+                        <td colspan="2" class="text-right">
+                            <label id="total">
+                                @Html.DisplayFor(m=>m.Price)
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+@section Scripts
+{
+
+}
+

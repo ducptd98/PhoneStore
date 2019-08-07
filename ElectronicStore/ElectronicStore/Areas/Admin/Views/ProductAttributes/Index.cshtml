@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ElectronicStore.Models.ProductAttributes>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Shared/_Layout.cshtml";
+}
+<br /> <br />
+<div>
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-info">Attributes List</h2>
+        </div>
+        <div class="col-5 text-right">
+            <a asp-action="Create" class="btn btn-info"><i class="fas fa-plus"></i> &nbsp; New Product Attributes</a>
+        </div>
+        <div class="col-1">
+
+        </div>
+    </div>
+    <br />
+    <div class="container-fluid">
+        <div>
+            <table class="table table-striped border">
+                <tr class="table-info">
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.Products)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.OS)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.MonitorSize)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.Resolution)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.MainCamera)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.RAM)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.ExternalStorage)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.PinCapacity)
+                    </th>
+                    <th style="text-align:center">
+                        @Html.DisplayNameFor(m => m.SIMCount)
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.Products.Name)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.OS)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.MonitorSize)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.Resolution)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.MainCamera)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.RAM)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.ExternalStorage)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.PinCapacity)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.DisplayFor(m => item.SIMCount)
+                    </td>
+                    <td style="text-align:center">
+                        <partial name="_TableButtonPartial" model="@Convert.ToInt32(item.Id)" />
+                    </td>
+                </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+

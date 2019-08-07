@@ -1,0 +1,397 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using ElectronicStore.Ultilities
+@using System.Security.Claims;
+@using ElectronicStore.Extensions
+@using Microsoft.AspNetCore.Http
+
+@inject IHttpContextAccessor HttpContextAccessor
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    var Name = "";
+    if (SignInManager.IsSignedIn(User))
+    {
+        var userName = UserManager.GetUserName(User);
+        var NameData = userName.Split("@");
+        Name = NameData[0];
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electronic Online Store</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Baggage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <!-- //Meta tag Keywords -->
+        <!-- Custom-Files -->
+        <link rel="stylesheet" href="~/css/bootstrap.css">
+        <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="~/css/style.css" type="text/css" media="all" />
+        <!-- Style-CSS -->
+        <!-- font-awesome-icons -->
+        <link href="~/css/font-awesome.css" rel="stylesheet">
+        <!-- //font-awesome-icons -->
+        <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <!-- /Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/jquery-ui.css" />
+        <!-- //Fonts -->
+        @*<link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="~/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="~/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+            <!-- //Custom Theme files -->
+            <!-- font-awesome icons -->
+            <link href="~/css/font-awesome.css" rel="stylesheet">
+            <!-- //font-awesome icons -->
+            <link href="~/css/font-awesome.css" rel="stylesheet">
+            <!-- js -->
+            <script src="~/js/jquery.min.js"></script>
+            <link rel="stylesheet" href="~/css/jquery.countdown.css" /> <!-- countdown -->
+            <!-- //js -->
+            <!-- web fonts -->
+            <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+            <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>*@
+    </environment>
+    <environment exclude="Development">
+        @*<link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="~/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="~/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- //Custom Theme files -->
+        <!-- font-awesome icons -->
+        <link href="~/css/font-awesome.css" rel="stylesheet">
+        <!-- //font-awesome icons -->
+        <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <!-- js -->
+        <script src="~/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="~/css/jquery.countdown.css" /> <!-- countdown -->
+        <!-- //js -->
+        <!-- web fonts -->
+        <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>*@
+        <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/jquery-ui.css" />
+        <!-- //Meta tag Keywords -->
+        <!-- Custom-Files -->
+        <link rel="stylesheet" href="~/css/bootstrap.css">
+        <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="~/css/style.css" type="text/css" media="all" />
+        <!-- Style-CSS -->
+        <!-- font-awesome-icons -->
+        <link href="~/css/font-awesome.css" rel="stylesheet">
+        <!-- //font-awesome-icons -->
+        <!-- /Fonts -->
+        <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+        <script type="text/javascript" src="~/js/bootstrap-3.1.1.min.js"></script>
+        <!-- //Fonts -->
+    </environment>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    @*header*@
+    <div class="main-sec inner-page">
+        <header class="py-sm-3 pt-3 pb-2" id="home">
+            <div class="container">
+                <!-- nav -->
+                <div class="top-w3pvt d-flex">
+                    <div id="logo">
+                        <h1> <a asp-area="Customer" asp-controller="Home" asp-action="Index"><span class="log-w3pvt">E</span>lectronic</a> <label class="sub-des">Online Store</label></h1>
+                    </div>
+                    <div class="forms ml-auto">
+
+                        @*<a href="login.html" class="btn"><span class="fas fa-user-circle-o"></span> Sign In</a>
+        <a href="register.html" class="btn"><span class="fas fa-pencil-square-o"></span> Sign Up</a>*@
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <nav>
+                                <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new {area = ""})" method="post" id="logoutForm">
+                                    <div class="btn-group">
+                                        @if (HttpContextAccessor.HttpContext.Session.Get<List<long>>("ssShoppingCart") != null)
+                                        {
+                                            <a asp-area="Customer" asp-controller="ShoppingCart" asp-action="Index">
+                                                <i class="fas fa-shopping-cart"></i> &nbsp;
+                                                @{
+                                                    var count = HttpContextAccessor.HttpContext.Session.Get<List<long>>("ssShoppingCart").Count;
+                                                }
+                                                (@count)
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-area="Customer" asp-controller="ShoppingCart" asp-action="Index">
+                                                <i class="fas fa-shopping-cart"></i> &nbsp;
+                                                0
+                                            </a>
+                                        }
+                                        @if (User.IsInRole(SD.SuperAdminEndUser)  || User.IsInRole(SD.ShippingUser))
+                                        {
+                                            <a asp-area="Admin" asp-controller="HomeAdmin" asp-action="Index"><span><i class="fas fa-tools" style="color: black;"></i></span></a>
+                                        }
+                                        <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @Name!</a>
+                                        <button type="submit" class="btn" style="background-color: aliceblue; text-shadow: none">Logout</button>
+                                    </div>
+
+                                </form>
+                            </nav>
+
+                        }
+                        else
+                        {
+                            @if (HttpContextAccessor.HttpContext.Session.Get<List<long>>("ssShoppingCart") != null)
+                             {
+                                 <a asp-area="Identity" asp-page="/Account/Login">
+                                     <i class="fas fa-shopping-cart"></i> &nbsp;
+                                     @{
+                                         var count = HttpContextAccessor.HttpContext.Session.Get<List<long>>("ssShoppingCart").Count;
+                                     }
+                                     (@count)
+                                 </a>
+                             }
+                             else
+                             {
+                                 <a asp-area="Identity" asp-page="/Account/Login">
+                                     <i class="fas fa-shopping-cart"></i> &nbsp;
+                                     0
+                                 </a>
+                             }
+                            <a asp-area="Identity" asp-page="/Account/Register" class="btn"><span><i class="fas fa-user-edit" style="color:black"></i></span>Register</a>
+                            <a asp-area="Identity" asp-page="/Account/Login" class="btn "><span><i class="fas fa-user" style="color:black"></i></span>Login</a>
+                        }
+                    </div>
+                </div>
+                <div class="nav-top-wthree">
+                    <nav>
+                        <label for="drop" class="toggle"><span><i class="fas fa-bars"></i></span></label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                            <li class="active"><a asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">
+                                    Dropdown <span aria-hidden="true"><i class="fas fa-angle-down"></i></span>
+                                </label>
+                                <a>Category <span aria-hidden="true"><i class="fas fa-angle-down" style="color:black"></i></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul>
+                                    <li><a class="drop-text"  asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="Laptop">Laptop</a></li>
+                                    <li><a class="drop-text"  asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="Mobile">Mobile</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="shop.html">Products</a></li>
+                            <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">
+                                    Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
+                                </label>
+                                <a href="#">Brands <span aria-hidden="true"><i class="fas fa-angle-down" style="color:black"></i></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul>
+
+                                    <label class="text-info">Mobile</label>
+                                    <li><a class="drop-text dropleft" asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="Iphone">Iphone</a></li>
+                                    <li><a asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="Samsung" class="drop-text">Samsung</a></li>
+                                    <li><a asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="Huawei" class="drop-text">Huawei</a></li>
+                                    <li><a asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="Asus" class="drop-text">Asus</a></li>
+
+
+                                    <label class="text-info">Laptop</label>
+                                    <li><a asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="Dell" class="drop-text">Dell</a></li>
+                                    <li><a asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="Asus" class="drop-text">Asus</a></li>
+                                    <li><a asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="Acer" class="drop-text">Acer</a></li>
+
+
+
+
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- //nav -->
+                    <div class="search-form ml-auto">
+                        <div class="form-w3layouts-grid">
+                            <form action="#" method="get" class="newsletter">
+                                <input class="search" type="search" placeholder="Search here..." name="SearchString" value="@ViewData["currentFilter"]">
+                                <button type="submit" class="form-control btn" value="" asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-searchString="@ViewData["currentFilter"]"
+                                        asp-route-searchBrand="" asp-route-searchCate=""
+                                        ><span class="fa fa-search"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </header>
+        <div class="jumbotron" style="background-color:aliceblue; text-align:center">
+            <h1>E L E C T R O N I C</h1>
+            <h3>Online Shop Store</h3>
+            <p>Shopping in your ways</p>
+        </div>
+    </div>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+    @*Body here*@
+    <div class="footer_agileinfo_topf py-5">
+        <div class="container py-md-5">
+            <div class="row">
+                <div class="col-lg-3 footer_wthree_gridf mt-lg-5">
+                    <h2>
+                        <a asp-area="Customer" asp-controller="Home" asp-action="Index">
+                            <span>E</span>lectronic
+                        </a>
+                    </h2>
+                    <label class="sub-des2">Online Store</label>
+                </div>
+                <div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-4">
+                    <ul class="footer_wthree_gridf_list">
+                        <li>
+                            <a href="index.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html"><span class="fa fa-angle-right" aria-hidden="true"></span> About</a>
+                        </li>
+                        <li>
+                            <a href="shop.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Shop</a>
+                        </li>
+                        <li>
+                            <a href="shop.html"><span class="fa fa-angle-right" aria-hidden="true"></span>Collections</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-sm-4 mt-3">
+                    <ul class="footer_wthree_gridf_list">
+                        <li>
+                            <a href="single.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Extra Page</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span> Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="single.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Shop Single</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-sm-4 mt-3">
+                    <ul class="footer_wthree_gridf_list">
+                        <li>
+                            <a href="login.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Login </a>
+                        </li>
+
+                        <li>
+                            <a href="register.html"><span class="fa fa-angle-right" aria-hidden="true"></span>Register</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span>Privacy & Policy</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w3ls-fsocial-grid">
+                <h3 class="sub-w3ls-headf">Follow Us</h3>
+                <div class="social-ficons">
+                    <ul>
+                        <li><a href="http://facebook.com/olw9z"><span><i class="fab fa-facebook"></i></span> Facebook</a></li>
+                        <li><a href="#"><span ><i class="fab fa-twitter"></i></span> Twitter</a></li>
+                        <li><a href="#"><span><i class="fab fa-google"></i></span> Google</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="move-top text-center mt-lg-4 mt-3">
+                <a href="#home"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </div>
+
+    <partial name="~/Views/Customer/Shared/_CookieConsentPartial.cshtml" />
+
+    <div class="container body-content">
+        <hr />
+        <footer>
+            <p>&copy; 2019 - ElectronicStore</p>
+        </footer>
+    </div>
+    <script src="~/js/minicart.js"></script>
+    <script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+            var items, len, i;
+
+            if (this.subtotal() > 0) {
+                items = this.items();
+
+                for (i = 0, len = items.length; i < len; i++) {
+                }
+            }
+        });
+    </script>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery/dist/jquery-ui.js"></script>
+        <script src="~/lib/jquery/dist/jquery-ui.min.js"></script>
+        <script src="~/js/bootstrap-3.1.1.min.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery/dist/jquery-ui.js"></script>
+        <script src="~/lib/jquery/dist/jquery-ui.min.js"></script>
+        <script src="~/js/bootstrap-3.1.1.min.js"></script>
+
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

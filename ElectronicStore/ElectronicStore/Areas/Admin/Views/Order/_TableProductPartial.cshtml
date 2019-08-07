@@ -1,0 +1,45 @@
+﻿@using ElectronicStore.Extensions
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@model ElectronicStore.Models.ViewModels.OrderViewModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<table class="table" id="tabelProduct">
+    <tbody>
+        <tr>
+            <th><label asp-for="@Model.Products.FirstOrDefault().Id"></label></th>
+            <th><label asp-for="@Model.Products.FirstOrDefault().Name"></label></th>
+            <th><label asp-for="@Model.Products.FirstOrDefault().Price"></label></th>
+            <th><label asp-for="@Model.Products.FirstOrDefault().Quantity"></label></th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model.Products)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>
+                    <label id="productPrice_@item.Code">
+                        @if (item.PromotionPrice > 0)
+                        {
+                            @item.PromotionPrice
+                        }
+                        else
+                        {
+                            @item.Price
+                        }
+                    </label>
+                </td>
+                <td>
+                    <input type="number" name="quantity_@item.Code" asp-for="@item.Quantity" class="text-center" max="@item.Quantity" min="1" />
+                </td>
+                <td style="text-align: center">
+                    <a type="button" class="btn btn-danger" href="@Url.Action("Remove/"+@item.Id)" ><i class="fas fa-trash"></i></a>
+
+                </td>
+            </tr>
+        }
+        
+    </tbody>
+</table>
